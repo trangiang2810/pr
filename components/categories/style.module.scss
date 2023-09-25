@@ -1,0 +1,66 @@
+@import '@/styles/mixin';
+
+.container {
+  position: relative;
+  padding: 5rem;
+  @include screen_md {
+    padding: 1.5rem;
+  }
+
+  .btn_next {
+    position: absolute;
+    right: 2%;
+    z-index: 1;
+    top: 38%;
+    @include screen_md {
+      right: 0;
+    }
+    @include screen_sm {
+      top: 31%;
+    }
+  }
+  .btn_back {
+    position: absolute;
+    left: 2%;
+    z-index: 1;
+    top: 38%;
+    @include screen_md {
+      left: 0;
+    }
+    @include screen_sm {
+      top: 31%;
+    }
+  }
+
+  .items {
+    padding: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    @include screen_sm {
+      padding: 0.5rem;
+    }
+
+    .thumb {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+      background: #fff;
+      border-radius: 100%;
+      position: relative;
+      :hover {
+        opacity: 0.7;
+      }
+    }
+    h2 {
+      padding-top: 1rem;
+      font-size: 1.6rem;
+      @include screen_lg {
+        font-size: 1.4rem;
+      }
+      @include screen_sm {
+        font-size: 1rem;
+      }
+      @include screen_xs {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

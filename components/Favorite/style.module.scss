@@ -1,0 +1,96 @@
+@import '@/styles/mixin';
+.empty {
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    font-size: 3rem;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  .title {
+    padding: 2rem 3rem 2rem;
+    font-size: 1.6rem;
+  }
+  @include screen_sm {
+    padding: 0 0 5rem;
+    gap: 2rem;
+  }
+  .meals_list {
+    padding: 0 3rem 5rem;
+    padding: 2rem;
+    border-bottom: 1px solid rgba(148, 147, 147, 0.336);
+    border-top: 1px solid rgba(148, 147, 147, 0.336);
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    @include screen_xs {
+      padding: 1rem 0.5rem;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    @include screen_xs {
+      padding: 1rem 0;
+    }
+
+    .meal_item {
+      flex: 2 2;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-right: 1rem;
+
+      .thumb {
+        max-width: 20vh;
+        min-width: 10vh;
+        img {
+          border-radius: 1.5rem;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+      }
+      .name {
+        font-size: 1.4rem;
+        @include screen_sm {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .btn_detail {
+      flex: 1 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .btn {
+        background: rgb(255, 136, 0);
+        border-radius: 5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        :hover {
+          color: #fff;
+        }
+      }
+    }
+
+    .favourite {
+      flex: 1 1;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      color: rgb(225, 29, 62);
+      cursor: pointer;
+      text-align: right;
+      font-size: 2.2rem;
+      // .icon {
+      //   margin-right: 2rem;
+      // }
+    }
+  }
+}

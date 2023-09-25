@@ -1,0 +1,76 @@
+.container {
+  margin: auto;
+  max-width: 120rem;
+  h1 {
+    font-size: 2.2rem;
+  }
+  .thumb {
+    margin: auto;
+    height: 50vh;
+    position: relative;
+    img {
+      object-fit: cover;
+    }
+  }
+  .content {
+    padding: 2rem 4rem;
+    .title {
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .favourite {
+        display: flex;
+        align-items: center;
+        color: rgb(225, 29, 62);
+        cursor: pointer;
+        text-align: right;
+        font-size: 2.2rem;
+      }
+    }
+
+    .ingredient_list {
+      padding: 1.5rem 3rem;
+      background: #fff;
+      width: 100%;
+
+      thead {
+        text-align: left;
+        font-size: 1.4rem;
+      }
+      tbody {
+        font-size: 1.2rem;
+      }
+      .ingredient {
+        text-align: left;
+      }
+      .measure {
+        text-align: right;
+      }
+    }
+    .youtobe {
+      padding-top: 5rem;
+      display: flex;
+      justify-content: right;
+      iframe {
+        height: 22vh;
+        overflow: hidden;
+      }
+    }
+    .instructions {
+      padding-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      h3 {
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+      }
+      li {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

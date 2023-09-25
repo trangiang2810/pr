@@ -1,0 +1,20 @@
+@import '@/styles/mixin';
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  .search_input {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 1rem;
+    @include screen_md {
+      margin-top: 3rem;
+    }
+  }
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 4rem;
+  }
+}

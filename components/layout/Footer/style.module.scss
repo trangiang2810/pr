@@ -1,0 +1,40 @@
+.container {
+  font-size: 1.2rem;
+  .footer_wrapper {
+    // width: 100%;
+    padding: 2.5rem 2rem;
+    background: #202329;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    // padding: 2rem 1rem;
+    .items {
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      h3 {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        li {
+          gap: 0.5rem;
+          align-items: center;
+          display: flex;
+        }
+      }
+    }
+  }
+  .copyright {
+    background: #282828;
+    color: #777;
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+}
